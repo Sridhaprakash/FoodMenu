@@ -4,6 +4,9 @@
 <h2>Item Name:{{ item.item_name }}</h1>
 <h3>Description:{{ item.item_desc }}</h2>
 <h3>Price:{{ item.item_price }}</h3>
-<a href ="{% url 'food:delete_item' item.id %}">Delete</a>
-<a href ="{% url 'food:update_item' item.id %}">Edit Item </a>
+
+    <a href ="{% url 'food:delete_item' item.id %}">Delete</a>
+    <a href ="{% url 'food:update_item' item.id %}">Edit Item </a>
+
+
 {% endblock %}

@@ -8,5 +8,6 @@ class Profile(models.Model):
 
 #when we try to acces any object from this model we should get the username
 
+#string representation of this model
 def _str_(self):
     return self.user.username
